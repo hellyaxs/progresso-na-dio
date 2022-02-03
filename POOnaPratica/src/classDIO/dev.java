@@ -7,6 +7,9 @@ public class dev {
     private Set<conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
+    public dev(String nome) {
+        this.nome = nome;
+    }
 
     public void inscreverBootcamp(bootcamp bootcamp){
           conteudosInscritos.addAll(bootcamp.getConteudo());
